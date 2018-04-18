@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock title %}
+{% block content %}
+    {% for junta in juntas %}
+        <h1>{{ junta.titulo }}</h1>
+        <h3>{{ junta.sub_titulo }}</h3>
+        <p>{{ junta.nombre }}</p>
+        <p>{{ junta.cargo }}</p>
+        <img src="{{ junta.foto.url }}" alt="">
+        <picture>
+            <source media="(min-width: 650px)" srcset="{{ junta.foto.url }}">
+        </picture>
+    {% endfor %}
+{% endblock content %}
