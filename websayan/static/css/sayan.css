@@ -1,0 +1,51 @@
+@media (min-width: 1200px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .inicio{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .menu{
+        background: #48c671;
+        padding: 1rem !important;
+    }
+    .enlaces{
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .enlaces:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .menu-responsive{
+        justify-content: left !important;
+    }
+    .centrar-texto{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 320px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .inicio{
+        margin-top: 2rem;
+    }
+    .menu{
+        background: #48c671;
+    }
+    .menu a{
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .menu-responsive{
+        justify-content: left !important;
+        display: block !important;
+    }
+}

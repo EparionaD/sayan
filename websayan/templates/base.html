@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-PE">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %}{% endblock title %} </title>
     {% block css %}{% endblock css %}
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-3">
-                <img style="width:10%" src="media/logos/logo.png" alt="Logo Comunidad Sayán">
+        <div class="row inicio">
+            <div class="col-xl-2 logo">
+                <img style="width:40%" src="media/logos/logo.png" alt="Logo Comunidad Sayán">
             </div>
-            <div class="col-xl-9">
-                <nav>
-                    <a href="">Inicio</a>
-                    <a href="">La Comunidad</a>
-                    <a href="">Desarrollo</a>
-                    <a href="">Junta Directiva</a>
-                    <a href="">Contacto</a>
-                </nav>
+            <div class="align-self-center col-xl-5">
+                <div class="row justify-content-center">
+                    <h1>COMUNIDAD CAMPESINA DE SAYÁN</h1>
+                    <h6>Reconocida por Resolución Suprema del 17 de junio de 1942</h6>
+                </div>
+            </div>
+            <div class="align-self-center col-xl-5">
+                <div class="row menu-responsive">
+                    <nav class="navbar navbar-dark navbar-expand-lg menu">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menusayan" aria-controls="menusayan" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menusayan">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="enlaces" href="">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="enlaces" href="">La Comunidad</a>
+                                </li>
+                                <li>
+                                    <a class="enlaces" href="">Desarrollo</a>
+                                </li>
+                                <li>
+                                    <a class="enlaces" href="">Junta Directiva</a>
+                                </li>
+                                <li>
+                                    <a class="enlaces" href="">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
     {% block content %}{% endblock content %}
     {% block js %}{% endblock js %}
-    <footer>
-        
-    </footer>
 </body>
 </html>
