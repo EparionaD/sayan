@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock title %} </title>
+    {% block css %}{% endblock css %}
 </head>
 <body>
-    <nav>
-        <a href="">Inicio</a>
-        <a href="">La Comunidad</a>
-        <a href="">Desarrollo</a>
-        <a href="">Junta Directiva</a>
-        <a href="">Contacto</a>
-    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3">
+                <img style="width:10%" src="media/logos/logo.png" alt="Logo Comunidad Sayán">
+            </div>
+            <div class="col-xl-9">
+                <nav>
+                    <a href="">Inicio</a>
+                    <a href="">La Comunidad</a>
+                    <a href="">Desarrollo</a>
+                    <a href="">Junta Directiva</a>
+                    <a href="">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
     {% block content %}{% endblock content %}
+    {% block js %}{% endblock js %}
+    <footer>
+        
+    </footer>
 </body>
 </html>
