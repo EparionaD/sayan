@@ -10,6 +10,7 @@
     .menu{
         background: #48c671;
         padding: 1rem !important;
+        width: 88% !important;
     }
     .enlaces{
         color: white;
@@ -21,14 +22,30 @@
         color: black;
     }
     .menu-responsive{
-        justify-content: left !important;
+        justify-content: center; !important;
     }
     .centrar-texto{
         display: flex;
         justify-content: center;
     }
+    .imagen-index{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .imagen-index img{
+        height: 100%;
+    }
+    .pie{
+        background: #48c671;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
 }
-@media (min-width: 320px){
+@media (max-width: 320px){
     .logo{
         display: flex;
         justify-content: center;
