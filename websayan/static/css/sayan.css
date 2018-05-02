@@ -1,4 +1,176 @@
+@media (min-width: 576px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .inicio{
+        margin-top: 2rem;
+    }
+    .menu{
+        background: #48c671;
+    }
+    .menu a{
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .menu-responsive{
+        justify-content: left;
+        display: block;
+    }
+}
+
+@media (min-width: 992px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .inicio{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .menu{
+        background: #48c671;
+        padding: 1rem !important;
+        width: 88% !important;
+    }
+    .enlaces{
+        color: white;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .enlaces:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .menu-responsive{
+        justify-content: center;
+    }
+    .centrar-texto{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen-index{
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .pie{
+        background: #48c671;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        width: 100%;
+    }
+}
+
 @media (min-width: 1200px){
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo img{
+        height: 80%;
+    }
+    .inicio{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .nombre-comunidad h1{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .menu{
+        background: #48c671;
+        padding: 1rem !important;
+        width: 88% !important;
+    }
+    .menu a{
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+    .enlaces{
+        color: white;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .enlaces:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .menu-responsive{
+        justify-content: right;
+    }
+    .centrar-texto{
+        display: flex;
+        justify-content: center;
+    }
+    .centrar-texto h1{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .imagen-index{
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+    }
+    .imagen-index img{
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        top: -100%;
+        bottom: -100%;
+        min-height: 100%;
+        min-width:100%;
+        margin:auto;
+    }
+    .pie{
+        background: #48c671;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        width: 100%;
+    }
+    .footer{
+        background: #48c671;
+    }
+    .texto-footer{
+        padding-left: 8%;
+    }
+    .texto-footer1{
+        padding-left: 14%;
+    }
+    .texto-footer p{
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .texto-footer1 p{
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .sociales{
+        display: flex;
+        justify-content: center;
+    }
+    .sociales a{
+        color: white;
+        padding: 0.5rem;
+    }
+    .sociales a:hover{
+        color: black;
+    }
+}
+
+@media (min-width: 1400px){
     .logo{
         display: flex;
         justify-content: center;
@@ -29,40 +201,15 @@
         justify-content: center;
     }
     .imagen-index{
-        height: 500px;
+        height: 300px;
         display: flex;
         justify-content: center;
-    }
-    .imagen-index img{
-        height: 100%;
     }
     .pie{
         background: #48c671;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        position: absolute;
-        bottom: 0px;
+        position: relative;
         width: 100%;
-    }
-}
-@media (max-width: 320px){
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
-    .inicio{
-        margin-top: 2rem;
-    }
-    .menu{
-        background: #48c671;
-    }
-    .menu a{
-        color: white;
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-    .menu-responsive{
-        justify-content: left !important;
-        display: block !important;
     }
 }
