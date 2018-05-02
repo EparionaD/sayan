@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}La Comunidad{% endblock title %}
+
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" type='text/css' href="{% static 'css/sayan.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'css/fontawesome-all.min.css' %}">
+{% endblock css %}
+
+{% block content %}
+    <div class="titulos">
+        <h1>La Comunidad</h1>
+    </div>
+     <div class="container-fluid">
+        <div>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                {% for comu1 in comu %}
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-{{comu1.titulo}}-tab" data-toggle="pill" href="#pills-{{comu1.titulo}}" role="tab" aria-controls="pills-{{comu1.titulo}}" aria-selected="true">{{comu1.titulo}}</a>
+                    </li>
+                {% endfor %}
+                <!--<li class="nav-item">
+                    <a class="nav-link active" id="pills-Ubicación-tab" data-toggle="pill" href="#pills-Ubicación" role="tab" aria-controls="pills-Ubicación" aria-selected="true">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Reconocimiento</a>
+                </li>-->
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                {% for comu2 in comu %}
+                    <div class="tab-pane fade show" id="pills-{{comu2.titulo}}" role="tabpanel" aria-labelledby="pills-{{comu2.titulo}}-tab">
+                        <p>{{comu2.cuerpo}}</p>
+                    </div>
+                {% endfor %}
+              <!--<div class="tab-pane fade show active" id="pills-Ubicación" role="tabpanel" aria-labelledby="pills-Ubicación-tab">
+                  Ubicación
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  historia
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  reconocimiento
+              </div>-->
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    <script src="{% static '/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+
+{% endblock js %}

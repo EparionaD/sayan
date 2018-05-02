@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row inicio">
             <div class="col-xl-1 logo">
-                <img src="media/logos/logo.png" alt="Logo Comunidad Sayán">
+                <img src="/media/logos/logo.png" alt="Logo Comunidad Sayán">
             </div>
             <div class="align-self-center col-xl-5">
                 <div class="row justify-content-center nombre-comunidad">
@@ -27,10 +27,10 @@
                         <div class="collapse navbar-collapse" id="menusayan">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li class="nav-item">
-                                    <a class="enlaces" href="">Inicio</a>
+                                    <a class="enlaces" href="{% url 'web:index' %}">Inicio</a>
                                 </li>
                                 <li>
-                                    <a class="enlaces" href="">La Comunidad</a>
+                                    <a class="enlaces" href="{% url 'web:comunidad' %}">La Comunidad</a>
                                 </li>
                                 <li>
                                     <a class="enlaces" href="">Desarrollo</a>
