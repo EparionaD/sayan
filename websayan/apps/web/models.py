@@ -4,6 +4,7 @@ class Comunidad(models.Model):
 
     titulo = models.CharField('Título', max_length=60)
     cuerpo = models.TextField('Descripción')
+    imagen = models.ImageField('Imagen', upload_to = 'comunidad', default='/media/sayan.jpg')
 
     class Meta:
         ordering = ['titulo']
