@@ -187,12 +187,27 @@
     }
     .link-comunidad{
         color: #48c671;
+        font-size: 1.3rem
     }
     .link-comunidad:hover{
         color: black;
     }
     .link-comunidad.active{
         background-color: #48c671 !important;
+    }
+    .junta-directiva{
+        padding: 1rem 5rem 1rem 18rem;
+    }
+    .junta-directiva p{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .perfil{
+        margin: 0 2rem 1.5rem 2rem !important;
+    }
+    .formulario-contacto{
+        padding-left: 5rem !important;
+        padding-top: 3rem;
     }
 }
 

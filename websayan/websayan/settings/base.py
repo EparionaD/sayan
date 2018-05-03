@@ -116,3 +116,9 @@ AUTH_USER_MODEL = 'usuarios.Usuario'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR.child('media')
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'poolsandyr@gmail.com'
+EMAIL_HOST_PASSWORD = 'PoolRojas123.12'
+EMAIL_PORT = 587
