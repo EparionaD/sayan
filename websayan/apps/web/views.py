@@ -68,9 +68,10 @@ class Contacto(TemplateView):
         mensaje_email.content_subtype = 'html'
         mensaje_email.send()
 
-        print(nombre)
-        print(telefono)
-        print(email)
-        print(mensaje)
-
         return redirect('web:index')
+
+class Desarrollo(TemplateView):
+
+    template_name = 'desarrollo.html'
+
+

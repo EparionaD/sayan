@@ -209,6 +209,33 @@
         padding-left: 5rem !important;
         padding-top: 3rem;
     }
+    .carrusel-sayan{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .carrusel-sayan div{
+        max-height: 600px;
+    }
+    .icono-carrusel{
+        width: 50px !important;
+        height: 50px !important;
+        background-color: #48c671 !important;
+    }
+    .desarrollo{
+        padding-left: 7%;
+        font-size: 1.6rem;
+    }
+    .desarrollo-fondo{
+        background-color: #48c671;
+    }
+    .texto-carrusel{
+        justify-content: center;
+        padding: 15% 2.5rem 1rem 1rem;
+        text-align: justify;
+    }
+    .texto-carrusel div h3{
+        padding-bottom: 13%;
+    }
 }
 
 @media (min-width: 1400px){
