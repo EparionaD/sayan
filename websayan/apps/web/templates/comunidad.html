@@ -15,7 +15,7 @@
     </div>
     <div class="container-fluid div-comunidad">
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-12 col-xl-12">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 {% for comu1 in comu %}
                     <li class="nav-item">
@@ -27,10 +27,10 @@
                 {% for comu2 in comu %}
                     <div class="tab-pane fade show" id="pills-{{comu2.titulo}}" role="tabpanel" aria-labelledby="pills-{{comu2.titulo}}-tab">
                         <div class="row">
-                            <div class="col-xl-6">
+                            <div class="col-12 col-sm-12 col-xl-6">
                                 <p>{{comu2.cuerpo}}</p>
                             </div>
-                            <div class="col-xl-6 imagen-comunidad">
+                            <div class="col-12 col-sm-12 col-xl-6 imagen-comunidad">
                                 <img src="{{comu2.imagen.url}}" alt="">
                             </div>
                         </div>
