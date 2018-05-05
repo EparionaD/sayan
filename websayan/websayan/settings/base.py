@@ -11,10 +11,11 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-from unipath import Path
+#from unipath import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = Path(__file__).ancestor(3)
+#BASE_DIR = Path(__file__).ancestor(3)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -22,11 +23,6 @@ BASE_DIR = Path(__file__).ancestor(3)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=7&%2e%enuoeu@mupk_w+5^mn)29p9u$i-dyxjv#&rj)z74m-8'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -65,7 +61,7 @@ ROOT_URLCONF = 'websayan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR.child('templates')],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,7 +111,7 @@ USE_TZ = True
 AUTH_USER_MODEL = 'usuarios.Usuario'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR.child('media')
+MEDIA_ROOT = 'media'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'

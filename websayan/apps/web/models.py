@@ -4,7 +4,7 @@ class Comunidad(models.Model):
 
     titulo = models.CharField('Título', max_length=60)
     cuerpo = models.TextField('Descripción')
-    imagen = models.ImageField('Imagen', upload_to = 'comunidad', default='/media/sayan.jpg')
+    imagen = models.ImageField('Imagen', upload_to = 'comunidad')
 
     class Meta:
         ordering = ['titulo']
@@ -21,7 +21,7 @@ class JuntaDirectiva(models.Model):
     foto = models.ImageField('Fotografía', upload_to = 'directiva')
 
     class Meta:
-        ordering  = ['nombre']
+        ordering  = ['-id']
         verbose_name_plural = 'Junta Directiva'
 
     def __str__(self):
